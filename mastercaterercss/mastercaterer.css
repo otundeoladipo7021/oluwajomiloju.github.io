@@ -1,0 +1,357 @@
+*{
+    box-sizing: border-box;
+}
+#headercontainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #9f2b25;
+    height: auto;
+    width: 100%;
+    
+}
+#logo_title {
+    display: flex; /* Use flexbox to align logo and title */
+    align-items: flex-start; /* Align logo and title at the top */
+}
+#headerlogo{
+    height: 200px;
+    width: 350px;
+    background-image: url(../mastercatererpics/logo-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+h1{
+    font-family: "ivypresto-text", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 4em;
+    padding-top: 80px;
+    color: white;
+}
+nav{
+    align-self: flex-end;
+}
+#navcontainer{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: 100px;
+    padding: 0;
+    align-self: flex-end;
+}
+nav ul li a{
+    font-family: "calmetta", sans-serif;
+font-weight: 300;
+font-style: normal;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover{
+    color: #6c261e;
+}
+
+
+
+
+
+
+
+
+body{
+    margin:0px 0px 10px 0px;
+    color: #d0d0d0;
+    width: 100%;
+    margin: 0px;
+}
+#wrapper{
+    display:flex ;
+    justify-content: space-between;
+    margin: 28px 80px;
+    width: 85%;
+  
+}
+p{
+    color: black;
+    font-family: "calmetta", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+ul li{
+    color: black;
+}
+
+h2{
+    font-family: "ivypresto-text", serif;
+font-weight: 600;
+font-style: normal;
+    color:#6c261e;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+h3{
+    font-family: "ivypresto-text", serif;
+font-weight: 100;
+font-style: normal;
+    color:#9f2b25;
+}
+.content{
+    width: 100%;
+}
+.recentevents{
+    display: flex;
+    flex-direction:column;
+    background-color:lightgray ;
+    width: 100%;
+    padding: 10px;
+    margin-top:20px;
+    box-shadow: 10px 10px 25px #6c261e;
+}
+#recenteventpics{
+    display:flex;
+    max-width: fit-content;
+    max-height: fit-content;
+
+}
+#recenteventpics img{
+    padding-right: 10px;
+}
+#recenteventpics img:hover{
+    cursor: pointer;
+}
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image */
+}
+
+.lightbox-content {
+    max-width: 90%; /* Maximum width of the lightbox image */
+    max-height: 90%; /* Maximum height of the lightbox image */
+}
+
+.close {
+    position: absolute; /* Position the close button */
+    top: 20px;
+    right: 30px;
+    color: white; /* Close button color */
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+#home_image1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 80%;
+  margin-top: 100px; 
+  margin-left: 150px;
+}
+
+#home_image1 img{
+    margin-top: 20px;
+    border-left: #6c261e 5px solid;
+    border-bottom: #9f2b25 4px solid;
+    box-shadow: 10px 10px 35px grey;
+}
+#home_image1 img:hover{
+    cursor: pointer;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding:20px 0px;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    font-family: "calmetta", sans-serif;
+font-weight: 300;
+font-style: normal;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    
+}
+.footer-section a:hover{
+    color: #6c261e;
+}
+
+.contentblock{
+    color: black;
+    width: 100%;
+}
+#timeline{
+    display: flex;
+    margin-left: 70px;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+#timeline img{
+    margin-right: 20px;
+}
+.gallerypics{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallerypics img{
+margin-right: 10px;
+margin-bottom: 10px;
+border-bottom: #9f2b25 10px solid;
+
+.gallerypics img:hover{
+cursor: pointer;
+}
+}
+.galleryintro p{
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    #headercontainer {
+        display: block;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-color: #9f2b25;
+        height: auto;
+        width: 100%;
+    }
+    #logo_title {
+        display: block;
+    }
+    #navcontainer {
+        margin-left: 20px;
+        display: flex;
+        gap: 26px;
+        list-style: none;
+}
+nav ul li{
+    font-size: 0.7em;
+}
+ul li {
+    color: black;
+    font-size: 1.5em;
+}
+#wrapper {
+    display: block;
+    justify-content: space-between;
+    margin: 28px 80px;
+    width: 100%;
+}
+.content {
+    width: 50%;
+}
+h1{
+    display: none;
+}
+h2 {
+    font-family: "ivypresto-text", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #6c261e;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+p {
+    color: black;
+    font-family: "calmetta", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5em;
+}
+.recentevents {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 25px #6c261e;
+}
+h3 {
+    font-family: "ivypresto-text", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #9f2b25;
+    font-size: 1.5em;
+}
+#recenteventpics {
+    display: none;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+#home_image1 {
+    /* display: none; */
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    /* padding-bottom: 150px; */
+    width: 100%;
+}
+.footer-container {
+    display: block;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+.footer-section {
+    flex: 1;
+    margin: 0 25px;
+    padding-top: 10px;
+}
+.footer-section a {
+    font-family: "calmetta", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+
+}
+@media only screen and (max-width: 1245px){
+    #timeline{
+        display: none;
+    }
+}
