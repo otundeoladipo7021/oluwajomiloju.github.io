@@ -49,6 +49,8 @@ font-style: normal;
     color: white;
     font-size: 1.5em;
     text-decoration: none;
+    padding-right: 10px;
+    border-right: white 2px solid;
 }
 
 
@@ -78,9 +80,11 @@ body{
 }
 p{
     color: black;
-    font-family: "calmetta", sans-serif;
-font-weight: 300;
+    font-family: "ivypresto-headline", serif;
+font-weight: 100;
 font-style: normal;
+font-size: 1.2em;
+letter-spacing:1px;
 }
 
 ul li{
@@ -103,6 +107,12 @@ font-style: normal;
 }
 .content{
     width: 100%;
+}
+.content ul li{
+    margin-bottom: 8px;
+    font-family: "ivypresto-text", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .recentevents{
     display: flex;
@@ -195,6 +205,7 @@ footer {
 }
 
 .footer-section a {
+    font-size: 1em;
     font-family: "calmetta", sans-serif;
 font-weight: 300;
 font-style: normal;
@@ -259,6 +270,10 @@ cursor: pointer;
 nav ul li{
     font-size: 0.7em;
 }
+nav ul li a{
+    padding-right: 0;
+    border-right: 0px;
+}
 ul li {
     color: black;
     font-size: 1.5em;
@@ -271,6 +286,14 @@ ul li {
 }
 .content {
     width: 50%;
+}
+.content ul li{
+    margin-bottom: 8px;
+    font-family: "ivypresto-text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .8em;
+    
 }
 h1{
     display: none;
@@ -288,7 +311,7 @@ p {
     font-family: "calmetta", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.0em;
 }
 .recentevents {
     display: flex;
