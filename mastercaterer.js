@@ -28,4 +28,28 @@ document.addEventListener("DOMContentLoaded", () => {
             lightbox.style.display = "none"; // Hide the lightbox
         }
     });
+   
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Select all FAQ items
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    // Add click event to each question
+    faqItems.forEach((item) => {
+        const question = item.querySelector(".question");
+        const answer = item.querySelector(".answer");
+        const toggle = item.querySelector(".toggle");
+
+        question.addEventListener("click", () => {
+            // Toggle the display of the answer
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                toggle.textContent = "+";
+            } else {
+                answer.style.display = "block";
+                toggle.textContent = "−";
+            }
+        });
+    });
 });
