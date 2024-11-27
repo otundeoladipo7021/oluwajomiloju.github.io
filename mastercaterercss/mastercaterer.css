@@ -60,11 +60,13 @@ nav ul li a {
     text-decoration: none;
     padding-right: 10px;
     border-right: white 2px solid;
+    
 }
 
 
 nav ul li a:hover {
     color: #6c261e;
+    border-bottom:2px #fff solid;
 }
 
 
@@ -206,13 +208,20 @@ h3 {
 
 #home_image1 img {
     margin-top: 20px;
+    margin-bottom: 100px;
     border-left: #6c261e 5px solid;
     border-bottom: #9f2b25 4px solid;
-    box-shadow: 10px 10px 35px grey;
+   
+   transition: 0.5;
+   box-shadow: 5px 5px 35px grey;
 }
+
+
 
 #home_image1 img:hover {
     cursor: pointer;
+    
+   
 }
 
 footer {
