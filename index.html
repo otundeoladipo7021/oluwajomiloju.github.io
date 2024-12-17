@@ -11,6 +11,8 @@
     <link href="mastercaterercss/mastercaterer.css" rel="stylesheet">
     <link href="mastercatererpics/logo.jpg" rel="icon" type="image/png">
     <link rel="stylesheet" href="https://use.typekit.net/grl5gci.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -28,7 +30,14 @@
                 <ul id="navcontainer">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="mastercaterer_about.html">About</a></li>
-                    <li><a href="mastercaterer_menu.html">Menu</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Services<span class="arrow">&#9662;</span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="mastercaterer_corporate.html">Corporate Catering</a></li>
+                            <li><a href="mastercaterer_private.html">Private Catering</a></li>
+                            <li><a href="mastercaterer_school.html">School Meals</a></li>
+                        </ul>
+                    </li>
                     <li><a href="mastercaterer_gallery.html">Gallery</a></li>
                     <li><a href="mastercaterer_contact.html">Contact</a></li>
                     <li><a href="mastercaterer_faqs.html">FAQs</a></li>
@@ -65,7 +74,29 @@
             <h2> Services</h2>
             <p>At MasterCaterer, we provide exceptional catering services tailored to various events and settings.
                 Whether you're organizing a corporate function, providing meals for students, or hosting a special
-                event, our team ensures a seamless, flavorful experience.
+                event, our team ensures a seamless, flavorful experience.</p>
+                <div class="service-container">
+                    <div class="service-card">
+                      <img src="mastercatererpics/drinks.jpg" alt="Corporate Catering">
+                      <div class="overlay">
+                        <h4>Corporate Catering</h4>
+                      </div>
+                    </div>
+                  
+                    <div class="service-card">
+                      <img src="mastercatererpics/IMG-20241031-WA0032.jpg" alt="School Meals">
+                      <div class="overlay">
+                        <h4>School Meals</h4>
+                      </div>
+                    </div>
+                  
+                    <div class="service-card">
+                      <img src="mastercatererpics/IMG-20241031-WA0046.jpg" alt="Private Event Catering">
+                      <div class="overlay">
+                        <h4>Private Event Catering</h4>
+                      </div>
+                    </div>
+                  </div>
             <ul>
                 <li>Corporate Catering:From business meetings to large corporate events, our professional catering
                     services are designed to impress. With customizable menus featuring both Nigerian and international
@@ -80,31 +111,19 @@
                     experience for all your guests.</li>
 
             </ul>
+           
 
 
-            <section class="recentevents">
-                <h3> Recent Events</h3>
-                
-                <div id="recenteventpics">
-                    <img src="mastercatererpics/IMG-20241031-WA0047.jpg" alt="beef kebabs" height="250px" width="250px"
-                        class="thumbnail" data-large="mastercatererpics/IMG-20241031-WA0047.jpg">
-                    <img src="mastercatererpics/IMG-20241031-WA0042.jpg" alt="chefatthetable" height="250px"
-                        width="250px" class="thumbnail" data-large="mastercatererpics/IMG-20241031-WA0042.jpg">
-                    <img src="mastercatererpics/IMG-20241031-WA0037.jpg" alt="table with food" height="250px"
-                        width=200px class="thumbnail" data-large="mastercatererpics/IMG-20241031-WA0037.jpg">
-                </div>
-
-                <div id="lightbox" class="lightbox">
-                    <span class="close">&times;</span>
-                    <img class="lightbox-content" id="lightbox-image">
-                </div>
-            </section>
-
+         
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightbox-image">
+            </div>
         </div>
 
         <div id="home_image1">
-            <img src="mastercatererpics/IMG-20241031-WA0032.jpg" alt="food packaging" height="350px" width="350px"
-                class="thumbnail" data-large="mastercatererpics/IMG-20241031-WA0032.jpg">
+            <img src="mastercatererpics/WhatsApp Image 2024-11-14 at 21.15.33_e74ef1c4.jpg" alt="groupphoto" height="450px" width="300px"
+                class="thumbnail" data-large="mastercatererpics/WhatsApp Image 2024-11-14 at 21.15.33_e74ef1c4.jpg">
             <img src="mastercatererpics/IMG-20241031-WA0054.jpg" alt="corporate catering setup" height="225px"
                 width="300px" class="thumbnail" data-large="mastercatererpics/IMG-20241031-WA0054.jpg">
             <img src="mastercatererpics/IMG-20241031-WA0055.jpg" alt="Netherlands embassy plating" height="135px"
@@ -112,12 +131,14 @@
 
         </div>
 
+        
+
     </div>
     <footer>
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Contact Us</h3>
-                <a href="mailto:someone@example.com">jomilojutundeoladipo@hotmail.com</a><br><br>
+                <a href="mailto:someone@example.com">jomilojutundeoladipo@hotmail.com</a>
                 <a href="tel:+12265046041">+1(226)504-6041</a>
             </div>
             <div class="footer-section">
@@ -130,9 +151,9 @@
             </div>
             <div class="footer-section">
                 <h3>Follow Us</h3>
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
             </div>
         </div>
     </footer>

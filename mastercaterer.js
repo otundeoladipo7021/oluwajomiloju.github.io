@@ -31,25 +31,30 @@ document.addEventListener("DOMContentLoaded", () => {
    
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Select all FAQ items
-    const faqItems = document.querySelectorAll(".faq-item");
-
-    // Add click event to each question
-    faqItems.forEach((item) => {
-        const question = item.querySelector(".question");
-        const answer = item.querySelector(".answer");
-        const toggle = item.querySelector(".toggle");
-
-        question.addEventListener("click", () => {
-            // Toggle the display of the answer
-            if (answer.style.display === "block") {
-                answer.style.display = "none";
-                toggle.textContent = "+";
-            } else {
-                answer.style.display = "block";
-                toggle.textContent = "−";
-            }
-        });
+document.querySelectorAll('.question').forEach(item => {
+    item.addEventListener('click', () => {
+        const faqItem = item.parentElement;
+        faqItem.classList.toggle('active');
     });
 });
+
+let currentIndex = 0;
+
+function moveSlide(direction) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const totalSlides = slides.length;
+  
+  currentIndex += direction;
+
+  // Loop back to the beginning or end if necessary
+  if (currentIndex < 0) {
+    currentIndex = totalSlides - 1;
+  } else if (currentIndex >= totalSlides) {
+    currentIndex = 0;
+  }
+
+  // Apply the transformation to move the carousel
+  const carousel = document.querySelector('.carousel');
+  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+setInterval(() => moveSlide(1), 3000); // Change slide every 3 seconds

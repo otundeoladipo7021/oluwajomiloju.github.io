@@ -11,6 +11,7 @@
     <link href="mastercaterercss/mastercaterer.css" rel="stylesheet">
     <link href="mastercatererpics/logo.jpg" rel="icon" type="image/png">
     <link rel="stylesheet" href="https://use.typekit.net/grl5gci.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -28,7 +29,14 @@
                 <ul id="navcontainer">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="mastercaterer_about.html">About</a></li>
-                    <li><a href="mastercaterer_menu.html">Menu</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Services<span class="arrow">&#9662;</span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="mastercaterer_corporate.html">Corporate Catering</a></li>
+                            <li><a href="mastercaterer_private.html">Private Catering</a></li>
+                            <li><a href="mastercaterer_school.html">School Meals</a></li>
+                        </ul>
+                    </li>
                     <li><a href="mastercaterer_gallery.html">Gallery</a></li>
                     <li><a href="mastercaterer_contact.html"">Contact</a></li>
                     <li><a href=" mastercaterer_faqs.html">FAQs</a></li>
@@ -62,25 +70,43 @@
 
             </p>
             <img src="mastercatererpics/grp photo with staff.jpg" class="leave_phone" alt="timeline"
-                style="width: 500px; height: 268px;margin-left: 40px">
+                style="width: 500px; height: 300px;margin-left: 40px; border-radius: 10%;">
             <img src="mastercatererpics/drinks2.jpg" alt="timeline" class="leave_phone"
-                style="margin-top:20px; margin-left: 40px; width: 500px; height: 333px;">
+                style="margin-top:20px; margin-left: 40px; width: 500px; height: 333px;border-radius: 10%;">
         </div>
+        
 
         <div id="abtpotrait">
             <img src="mastercatererpics/boss_portrait.jpg" alt="onwer's portrait"
-                style="padding-left: 40px; width: 580px; height: 870px;">
+                style=" padding-top: 20px; padding-left: 40px; width: 580px; height: 870px; border-radius: 30%; padding-bottom: 50px;">
+
+                <div class="carousel-container">
+                    <div class="carousel">
+                      <div class="carousel-slide">
+                        <img src="mastercatererpics/IMG-20241031-WA0046.jpg" class="leave_phone" alt="timeline">
+                      </div>
+                      <div class="carousel-slide">
+                        <img src="mastercatererpics/IMG-20241031-WA0040.jpg" alt="shrimps">
+                      </div>
+                      <div class="carousel-slide">
+                        <img src="mastercatererpics/IMG-20241031-WA0055.jpg" alt="picwithstaff3">
+                      </div>
+                    </div>
+                    
+                    <!-- Navigation buttons -->
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                  </div>
 
         </div>
 
-    </div>
     </div>
     <footer>
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Contact Us</h3>
-                <p><a href="mailto:someone@example.com">jomilojutundeoladipo@hotmail.com</a></p>
-                <p><a href="tel:+12265046041">+1(226)504-6041</a></p>
+                <a href="mailto:someone@example.com">jomilojutundeoladipo@hotmail.com</a>
+                <a href="tel:+12265046041">+1(226)504-6041</a>
             </div>
             <div class="footer-section">
                 <h3>Navigation</h3>
@@ -92,13 +118,13 @@
             </div>
             <div class="footer-section">
                 <h3>Follow Us</h3>
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
             </div>
         </div>
     </footer>
 
 </body>
-
+<script src="mastercaterer.js"></script>
 </html>
