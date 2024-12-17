@@ -754,7 +754,7 @@ textarea:focus {
         font-weight: 300;
         font-style: normal;
         color: white;
-        font-size: .6em;
+        font-size: .7em;
     }
     #logo_title{
         margin-left:3%;
@@ -767,7 +767,7 @@ textarea:focus {
         font-size: 1.2em;
     }
     p{
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
    .content ul{
     display: none;
