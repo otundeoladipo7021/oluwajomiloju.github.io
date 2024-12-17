@@ -710,3 +710,129 @@ textarea:focus {
     opacity: 1;
     padding-top: 10px;
 }
+
+@media screen and (max-width: 480px) {
+    /* Styles for mobile devices */
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    h1{
+        display: none;
+    }
+    #headercontainer{
+        display: block;
+        max-width: 100%;
+        }
+
+     #home_image1{
+        display: none;
+     }   
+     #wrapper{
+        margin-right: 0px;
+        margin-left:    10%;
+        margin-top: 0%;
+        max-width: 80%;
+     }
+    nav{
+        align-self: flex-start;
+        margin-left: 5%;
+    }
+    
+    #navcontainer {
+        display: flexbox;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-right: 0%;
+        
+    }
+    
+    nav ul li a {
+        font-family: "calmetta", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: white;
+        font-size: .6em;
+    }
+    #logo_title{
+        margin-left:3%;
+    }
+    
+    .dropbtn{
+        white-space: nowrap;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+   .content ul{
+    display: none;
+   }
+   .leave_phone{
+    display: none;
+   }
+   #ownerptr{
+    display: none;
+   }
+  
+   .gallerypics{
+    margin-left: 24%;
+   }
+
+   .gallerypics img{
+    width: 100px;
+    height: 100px;
+   }
+    /* Stack the sections vertically on mobile */
+    .contact-page {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 10%;
+    }
+
+    /* Info section styling for mobile */
+    .info-section,
+    .contact-container {
+        padding: 15px;
+        width: 100%;  /* Ensure the sections take up full width */
+        box-sizing: border-box;  /* Prevent padding from affecting width */
+    }
+
+
+
+    /* Adjust text size and margin for mobile */
+    .info-section h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .info-section p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    /* Contact form adjustments */
+    .contact-container h2 {
+        text-align: left;
+        color: #6c261e;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust form inputs */
+
+
+    /* Reduce gap between form fields */
+    .info-section2{
+        display: none;
+    }
+
+}
