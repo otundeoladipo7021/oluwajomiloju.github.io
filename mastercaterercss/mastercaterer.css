@@ -710,6 +710,9 @@ textarea:focus {
     opacity: 1;
     padding-top: 10px;
 }
+#galleryintro{
+    margin-left: 10%;
+}
 
 @media screen and (max-width: 480px) {
     /* Styles for mobile devices */
@@ -757,7 +760,7 @@ textarea:focus {
         font-weight: 300;
         font-style: normal;
         color: white;
-        font-size: .8em;
+        font-size: .8rem;
     }
     #logo_title{
         margin-left:10%;
@@ -837,6 +840,101 @@ textarea:focus {
     .info-section2{
         display: none;
     }
+}
+@media screen and (max-width: 768px) {
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    h1{
+        display: none;
+    }
+    #headercontainer{
+        display: block;
+        max-width: 100%;
+        }
+    #wrapper{
+            margin-right: 0px;
+            margin-left:    10%;
+            margin-top: 0%;
+            max-width: 80%;
+            flex-direction: column;
+         }    
+         
+     #home_image1 {
+            display: none;
+         }
     
-
+         nav{
+            align-self: flex-start;
+            margin-left: 10%;
+        }
+        
+        #navcontainer {
+            display: flexbox;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-right: 0%;
+            
+        }
+        .contact-page {
+            flex-direction: column;
+            gap: 15px;
+            
+        }
+        .info-section2{
+            margin-top: 5%;
+        }
+        #galleryintro{
+            margin-left:10% ;
+        }
+}
+@media screen and (max-width: 1024px) {
+    #wrapper{
+        margin-right: 0px;
+        margin-left:    10%;
+        margin-top: 0%;
+        max-width: 100%;
+        flex-direction: column;
+     }    
+     h1{
+        display: none;
+     }
+     nav{
+        align-self: flex-end;
+        margin-left: 5%;
+        
+    }
+    
+    #navcontainer {
+        display: flexbox;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-right: 10px;
+    }
+    #home_image1{
+    display: none;
+    }
+    .leave_phone{
+        display: none;
+    }
+    #ownerptr{
+        margin-left: 100px;
+    }
+    .carousel-container{
+        display: none;
+    }
+    .info-section2{
+        display: none;
+    }
+}
+@media screen and (max-width: 1440px) {
+    h1{
+    font-size: 3rem;
+    }
+    .gallerypics{
+        margin-left: 10%;
+    }
 }
