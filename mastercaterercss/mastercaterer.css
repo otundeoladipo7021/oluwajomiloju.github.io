@@ -735,10 +735,13 @@ textarea:focus {
         margin-left:    10%;
         margin-top: 0%;
         max-width: 80%;
+        flex-direction: column;
      }
+    
+     
     nav{
         align-self: flex-start;
-        margin-left: 5%;
+        margin-left: 10%;
     }
     
     #navcontainer {
@@ -754,10 +757,10 @@ textarea:focus {
         font-weight: 300;
         font-style: normal;
         color: white;
-        font-size: .7em;
+        font-size: .8em;
     }
     #logo_title{
-        margin-left:3%;
+        margin-left:10%;
     }
     
     .dropbtn{
@@ -791,7 +794,7 @@ textarea:focus {
     .contact-page {
         flex-direction: column;
         gap: 15px;
-        margin-left: 10%;
+        
     }
 
     /* Info section styling for mobile */
@@ -834,5 +837,6 @@ textarea:focus {
     .info-section2{
         display: none;
     }
+    
 
 }
