@@ -891,6 +891,184 @@ textarea:focus {
             margin-left:10% ;
         }
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+strong {
+    color: #6c261e;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Services Grid */
+services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.service-card {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px; 
+}
+
+.service-card ul {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem; /* Moved from global ul style */
+}
+.process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+    counter-reset: step-counter;
+    justify-content: space-between; /* Even distribution */
+}
+
+.process-step {
+    flex: 1; /* Grow equally */
+    min-width: 250px; /* Minimum width before wrapping */
+    position: relative;
+    padding: 1.5rem 1.5rem 1.5rem 4rem; /* More padding on left */
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.process-step::before {
+    counter-increment: step-counter;
+    content: counter(step-counter);
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+/* Mobile adjustments ONLY apply below 768px */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column only on mobile */
+    }
+    
+    .service-card {
+        min-width: auto; /* Reset any forced width */
+    }
+}
+
+/* Benefits Flex */
+.benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.benefit-item {
+    flex: 1 1 300px;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Process Section */
+.process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 0;
+    counter-reset: step-counter;
+}
+
+.process-step {
+    flex: 1 1 250px;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 3rem;
+}
+
+.process-step::before {
+    counter-increment: step-counter;
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--primary-color);
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.cta {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .process-steps {
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 1024px) {
     #wrapper{
         margin-right: 0px;
