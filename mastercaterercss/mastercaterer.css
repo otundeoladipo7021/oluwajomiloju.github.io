@@ -919,6 +919,7 @@ services-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin: 2rem 0;
+    
 }
 
 .service-card {
@@ -930,6 +931,7 @@ services-grid {
     display: flex;
     flex-direction: column;
     min-height: 500px; 
+    box-shadow: 4px 3px 2px 4px rgba(0,0,0,0.1);
 }
 
 .service-card ul {
@@ -953,7 +955,7 @@ services-grid {
     padding: 1.5rem 1.5rem 1.5rem 4rem; /* More padding on left */
     background: var(--white);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 4px 3px 2px 4px rgba(0,0,0,0.1);
 }
 
 .process-step::before {
@@ -990,6 +992,7 @@ services-grid {
     flex-wrap: wrap;
     gap: 1.5rem;
     margin: 2rem 0;
+    box-shadow: 4px 3px 2px 4px rgba(0,0,0,0.1);
 }
 
 .benefit-item {
